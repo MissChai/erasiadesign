@@ -1,0 +1,36 @@
+html body .ba589670,
+html body .ba589670 iframe:not([src*="pixel"]):not([style]),
+html body iframe[name="google_ads_frame"],
+html body .ba589670 iframe[name="google_ads_frame"],
+html body #wrap #page-body div.ba589670,
+html body #page-body .ba589670,
+html body div.ba589670 {
+ display:block!important;
+ visibility:visible!important;
+ float:none!important;
+ left:inherit!important;
+ top:inherit!important;
+ right:inherit!important;
+ bottom:inherit!important;
+ margin:0 auto!important;
+ filter:alpha(opacity=100)!important;
+ -moz-opacity:1!important;
+ -khtml-opacity:1!important;
+ opacity:1!important;
+ z-index:9999!important;
+ text-align:center!important
+}
+html body .ba589670,
+html body .ba589670 iframe[name="google_ads_frame"] {
+ width:728px!important;
+ height:90px!important;
+ min-height:90px!important
+}
+html body .ba589670 iframe:not([src*="pixel"]) {
+ border:0px!important
+}
+html body iframe[name="google_ads_frame"] {
+ width:100%!important;
+ height:inherit!important;
+ min-height:inherit!important
+}

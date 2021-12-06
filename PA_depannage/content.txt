@@ -1,0 +1,453 @@
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        // Acces rapide
+        jQuery(function () {
+            jQuery('div.table-title h2').each(function () {
+                var title = jQuery(this).html().replace(/[,\/].*/, '').trim();
+                var anchor = title.replace(/ /g, '-').toLowerCase();
+                var list = (title.match(/Terros|Mizuhan|Flamen|Nalcia|Midgard/)) ? '#pa-quick-links-countries' : '#pa-quick-links-categories';
+                jQuery(this).attr('id', anchor);
+                jQuery(list).append('<li><a href="#' + anchor + '">' + title + '</a></li>');
+            });
+            jQuery('#pa-quick-links-categories').append('<li> </li>');
+        });
+
+        // Staff
+        jQuery(function () {
+            jQuery('.staff-icons img').click(function () {
+                jQuery('.staff-icons img').removeClass('open');
+                jQuery(this).addClass('open');
+
+                jQuery('.staff-infos > div').fadeOut('fast');
+                jQuery('.staff-infos #' + jQuery(this).data('id')).fadeIn();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="pa">
+
+        <blockquote class="pa">
+
+            <section class="pa-section pa-section-wide">
+                <div class="pa-section-title" style="margin-top: 0px;">
+                    <span>Contexte</span>
+                </div>
+                <div class="pa-section-body" style="margin-top: 0px;">
+                    « Les contrées d'<strong>Érasia</strong> furent jadis fondées par des <strong>Pokémon</strong> de
+                    légende dont la puissance dépasse l'entendement humain. <strong>Mizuhan</strong>, le pays de l'Eau,
+                    <strong>Nalcia</strong>, le pays de l'Air, <strong>Terros</strong>, le pays de la Terre et
+                    <strong>Flamen</strong>, le pays du Feu furent dotés de puissants gardiens : Kyogre, Lugia, Groudon
+                    et
+                    Ho-Oh. Les hommes obtinrent des capacités pouvant rivaliser avec celles des créatures et se
+                    multiplièrent, avant de se lancer dans des luttes de pouvoir contre leurs semblables. Désormais,
+                    l'<strong>Eau</strong> et l'<strong>Air</strong> sont alliés pour lutter contre la
+                    <strong>Terre</strong> et le <strong>Feu</strong>, et malgré une paix relative, les
+                    <strong>tensions</strong> sont palpables, poussant de nombreux Érasiens de toutes les contrées à se
+                    dépasser pour s'améliorer et se tenir prêts à défendre chèrement leur vie ou leur patrie... Et la
+                    découverte du continent flottant, <strong>Midgard</strong>, à la civilisation au moins aussi
+                    complète et
+                    complexe que la leur, n'a pas arrangé les choses. »
+                </div>
+            </section>
+
+            <section class="pa-section pa-section-small">
+                <div class="pa-section-title" style="margin-top: 0px;">
+                    <span>Actualités</span>
+                </div>
+                <div class="pa-section-body" style="margin-top: 0px;">
+                    « Des <strong>batailles</strong> de grande envergure ont éclaté à Nalcia et à Terros ! Les Érasiens
+                    sont
+                    appelés à combattre, tandis que les Midgardiens sont sollicités pour prendre part aux recherches
+                    afin de
+                    trouver les créatures qui pourraient mettre fin au conflit... »
+                </div>
+            </section>
+            <section class="pa-section pa-section-small">
+                <div class="pa-section-title">
+                    <span>Liens utiles</span>
+                </div>
+                <div class="pa-section-body">
+
+                    <ul>
+
+                        <li>
+                            <a target="_blank" href="https://erasia-rpg.forum-actif.net/regles-d-erasia-f1/">Règles</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank"
+                                href="https://erasia-rpg.forum-actif.net/regles-d-erasia-f1/contexte-t100.htm">Contexte</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank"
+                                href="https://erasia-rpg.forum-actif.net/regles-d-erasia-f1/comment-bien-debuter-guide-du-debutant-t109.htm">Guide
+                                du débutant</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="https://erasia-rpg.forum-actif.net/les-votes-f105/">Votes</a>
+                        </li>
+
+                        <li>
+
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="https://erasia.fandom.com/fr/wiki/Accueil">Érasiapédia</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.aht.li/2419718/carte-erasia.png">Carte d'Érasia</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.aht.li/2419720/carte-tenkei.jpg">Carte de Midgard</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://erasia-calendar.epizy.com/">Calendrier</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="https://discord.gg/US7u6q4">Discord</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+            <section class="pa-section pa-section-small">
+                <div class="pa-section-title">
+                    <span>Accès rapide</span>
+                </div>
+                <div class="pa-section-body" id="pa-quick-links">
+
+                    <ul id="pa-quick-links-categories">
+
+                    </ul>
+
+                    <ul id="pa-quick-links-countries">
+
+                    </ul>
+
+                </div>
+            </section>
+            <section class="pa-section pa-section-small">
+                <div class="pa-section-title" style="">
+                    <span>Nouveautés</span>
+                </div>
+                <div class="pa-section-body" style="">
+
+                    <ul>
+
+                        <li>
+                            <a href="https://erasia-rpg.forum-actif.net/t4093-event-donjon-mystere-ii-wormhole"
+                                target="_blank">Des failles ont été ouvertes un peu partout sur Érasia ! Transformés en
+                                Pokémon inconnus, vous partez en exploration pour tenter de retrouver votre apparence
+                                d'origine...</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+        </blockquote>
+
+        <div id="pa-img">
+            <img src="https://www.aht.li/3658255/pa_img.png" />
+        </div>
+
+        <blockquote class="pa">
+
+            <section class="pa-section pa-section-full" style="margin-top: 0px;">
+                <div class="pa-section-title" style="margin-top: 0px;">
+                    <span>Staff</span>
+                </div>
+                <div class="pa-section-body" style="margin-top: 0px;">
+
+                    <div class="staff-icons">
+                        <img alt="Nina Wang" src="https://www.aht.li/3135461/nina.png" data-id="nina"> <img
+                            alt="Elvira Greyhunt" src="https://ahp.li/d75a6002a5a5215485ad.png" data-id="elvira"> <img
+                            alt="Anthere Osarian" src="https://ahp.li/835d5cc72538dd7917cb.png" data-id="anthere"> <img
+                            alt="Sylver Belister" src="https://www.aht.li/3328444/sylver.png" data-id="sylver"> <img
+                            alt="Lucy MacGregor" src="https://www.aht.li/3233973/lucy.png" data-id="lucy"> <img
+                            alt="Andromède di Neralitha" src="https://ahp.li/45b9b5f5e2ff6769739f.png"
+                            data-id="andromede">
+                        <img alt="Kaé" src="https://www.aht.li/2419667/kae.png" data-id="kae"> <img alt="Ayme"
+                            src="https://www.aht.li/2419670/ayme.png" data-id="ayme">
+                    </div>
+
+                    <div class="staff-infos">
+
+                        <div id="placeholder">
+                            Cliquez sur un avatar pour obtenir des informations sur celui qui se cache derrière...
+                        </div>
+
+                        <div id="nina">
+
+                            <div class="staff-title">
+                                Nina Wang<br><span>Administratrice</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u25"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=25"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Doyenne du forum, Nina est incollable sur tous les personnages qui habitent le vaste
+                                monde
+                                d'Érasia. Si vous avez des questions concernant cet aspect-là, c'est à elle qu'il faut
+                                demander
+                                !
+                            </div>
+
+                        </div>
+
+                        <div id="elvira">
+
+                            <div class="staff-title">
+                                Elvira Greyhunt<br><span>Modératrice</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u887"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=887"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Elle a beau avoir un bras en moins, Elvira a une poigne de fer ! Modératrice, elle est
+                                chargée
+                                de modifier les feuilles de vos personnages afin de tenir votre progression à jour.
+                            </div>
+
+                        </div>
+
+                        <div class="paragraphe" id="anthere">
+
+                            <div class="staff-title">
+                                Anthere Osarian<br><span>Responsable PNJ</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u284"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=284"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                En tant que Responsable PNJ, Anthere a le devoir de guider les joueurs au cours de
+                                scénarios
+                                ou
+                                missions organisés par le forum. C'est le travail qui fait avancer les intrigues du
+                                contexte
+                                !
+                            </div>
+
+                        </div>
+
+                        <div class="paragraphe" id="sylver">
+
+                            <div class="staff-title">
+                                Sylver Belister<br><span>Responsable PNJ</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u687"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=687"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Depuis qu'il a retrouvé sa jeunesse, Sylver est devenu encore plus fougueux et
+                                imaginatif
+                                que
+                                n'importe qui d'autre sur le forum ! En tant que Responsable PNJ, il vous accompagnera
+                                dans
+                                vos
+                                RPs pour les transformer en aventures folles et rocambolesques.
+                            </div>
+
+                        </div>
+
+                        <div id="lucy">
+
+                            <div class="staff-title">
+                                Lucy MacGregor<br><span>Noteuse</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u657"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=657"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Lucy est celle qui, à la fin de vos RPs, vous distribue les points vous permettant de
+                                progresser
+                                dans votre quête... On signalera donc de manière parfaitement innocente qu'elle adore
+                                les
+                                chocolats.
+                            </div>
+
+                        </div>
+
+                        <div id="andromede">
+
+                            <div class="staff-title">
+                                Andromède di Neralitha<br><span>Noteur</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u874"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=874"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Sous des airs innocents, Andromède cache un côté sombre. Il vaut donc mieux éviter de
+                                l'énerver
+                                si vous tenez à vos points...
+                            </div>
+
+                        </div>
+
+                        <div id="kae">
+
+                            <div class="staff-title">
+                                Kaé<br><span>Codeuse</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u272"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=272"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Informaticienne de son état, Kaé aime bidouiller. Elle se charge du code du forum, du
+                                CSS au
+                                JavaScript en passant par toutes les petites astuces dissimulées ici et là sur le forum.
+                            </div>
+
+                        </div>
+
+                        <div id="ayme">
+
+                            <div class="staff-title">
+                                Ayme<br><span>Designeuse</span>
+                            </div>
+
+                            <div class="staff-contact">
+                                <a target="_blank" href="https://erasia-rpg.forum-actif.net/u560"><em
+                                        class="fa fa-address-card-o"></em> Voir son profil</a><br> <a target="_blank"
+                                    href="https://erasia-rpg.forum-actif.net/privmsg?mode=post&amp;u=560"><em
+                                        class="fa fa-envelope-o"></em> Contacter</a>
+                            </div>
+
+                            <div class="staff-paragraphe">
+                                Génie de Photoshop, Ayme peut tout vous créer à partir de (presque) rien ! Une idée ?
+                                Une
+                                inspiration ? Une envie ? Notre créatrice préférée saura y remédier !
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <section class="pa-section pa-section-full" style="margin-top: 0px;"> </section>
+            <section class="pa-section pa-section-small">
+                <div class="pa-section-title" style="">
+                    <span>Top sites</span>
+                </div>
+                <div class="pa-section-body topsites" style="">
+                    <a target="_blank" href="http://www.root-top.com/topsite/lulu06/in.php?ID=1884"><img
+                            src="http://www.aht.li/2419684/mini-phyllali.jpg"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/mew/in.php?ID=230"><img
+                            src="http://www.aht.li/2419687/mini-pingoleon.jpg"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/gnik/in.php?ID=742"><img
+                            src="http://www.aht.li/2419689/mini-voltali.jpg"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/justmarried/in.php?ID=17"><img
+                            src="http://www.aht.li/2419693/mini-massko.png"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/bazzart/in.php?ID=1518"><img
+                            src="http://www.aht.li/2419695/mini-draco.jpg"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/melu/in.php?ID=3133"><img
+                            src="http://www.aht.li/2419698/mini-mentali.png"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/horsevalleys/in.php?ID=1559"><img
+                            src="http://www.aht.li/2419699/mini-noctali.png"> </a><a target="_blank"
+                        href="http://www.root-top.com/topsite/gilgamesh/in.php?ID=4650"><img
+                            src="http://www.aht.li/2419701/mini-shaymin.png"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/virtu4ldreaiviz/in.php?ID=5236"><img
+                            src="http://www.aht.li/2419703/mini-galeking.png"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/lsan/in.php?ID=340"><img
+                            src="http://www.aht.li/2419704/mini-aquali.png"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/risingstars/in.php?ID=15"><img
+                            src="http://www.aht.li/2419713/mini-bulbizarre.png"></a> <a target="_blank"
+                        href="http://www.root-top.com/topsite/serpentgy/in.php?ID=10327"><img
+                            src="http://www.aht.li/2419711/mini-polichombr.png"></a>
+                </div>
+            </section>
+
+            <section class="pa-section pa-section-wide">
+                <div class="pa-section-title" style="">
+                    <span>Top partenaires</span>
+                </div>
+                <div class="pa-section-body partners" style="">
+                    <a target="_blank" href="http://pokemoncommunity.forumactif.org"> <img
+                            src="https://i.imgur.com/mh306tQ.png" alt="Pokémon Community"> </a> <a target="_blank"
+                        href="http://enola.forumactif.com/"> <img src="https://zupimages.net/up/19/07/yq0o.png"
+                            alt="Légendes d'Enola"> </a> <a target="_blank" href="http://mysidia.forumactif.com/"> <img
+                            src="https://2img.net/image.noelshack.com/fichiers/2017/18/1493641196-bouton.gif"
+                            alt="Mysidia">
+                    </a> <a target="_blank" href="http://equestria-story.forumactif.org/"> <img
+                            src="https://2img.net/image.noelshack.com/fichiers/2017/26/7/1498954954-bouton-88.png"
+                            alt="Equestria Story"> </a> <a target="_blank" href="https://teyolia.forumgratuit.org/">
+                        <img src="https://i.servimg.com/u/f20/16/46/10/05/88-3111.jpg" alt="Teyolia"> </a> <a
+                        target="_blank" href="http://swordartonline-rpg.forumactif.org/"> <img
+                            src="https://i.servimg.com/u/f59/17/88/91/50/bouton11.png" alt="Sword Art"> </a> <a
+                        target="_blank" href="http://roketto-dan.e-monsite.com/"> <img
+                            src="http://roketto-dan.e-monsite.com/medias/images/bouton-rdns.gif" alt="Roketto Dan"> </a>
+                    <a target="_blank" href="http://pokemonaaml.superforum.fr/"> <img
+                            src="https://i.servimg.com/u/f11/15/58/86/67/mogb7r10.png" alt="Pokémon AAML"> </a> <span
+                        class="partners-void"> </span> <span class="partners-more"> <a
+                            href="https://erasia-rpg.forum-actif.net/t2322-liste-de-nos-partenaires"><span
+                                style="font-size: smaller;">Plus de partenaires</span></a> | <a
+                            href="https://erasia-rpg.forum-actif.net/t2327-demarche-pour-faire-une-demande-de-partenariat"><span
+                                style="font-size: smaller;">En devenir un !</span></a> </span>
+                </div>
+            </section>
+
+
+        </blockquote>
+    </div>
+
+
+</body>
+
+
+</html>

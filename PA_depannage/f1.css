@@ -1,0 +1,37 @@
+#left .683ce4 {
+ background-color: #fefcff;
+ color: #135194;
+ margin-bottom:4px;
+ overflow: hidden;
+ padding:0;
+}
+#left .683ce4 span.corners-bottom,
+#left .683ce4 span.corners-top {
+ margin:0;
+}
+#main .683ce4 {
+ background-color: #fefcff;
+ color: #135194;
+ margin-bottom: 4px;
+ overflow: hidden;
+ padding: 0 10px;
+}
+#main .683ce4 span.corners-bottom,
+#main .683ce4 span.corners-top {
+ margin:0 -10px;
+}
+#main .683ce4 .main-content iframe {
+ display: block important!;
+ visibility: visible important!
+}
+div#main-content iframe[src*=adstune]:not([style*=display]),
+div#main-content iframe[src*=criteo]:not([style*=display]),
+div#main-content iframe[src*=ad6b]:not([style*=display]),
+div#main-content iframe[src*=z5x]:not([style*=display]),
+div#main-content iframe[src*=doubleclick]:not([style*=display]) {
+ display: block !important;
+ visibility: visible !important;
+}
+div.ba589670 {
+ padding:10px 0 0 0 !important;
+}
