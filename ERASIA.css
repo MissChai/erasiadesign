@@ -6,7 +6,7 @@
 /*******************************************/
 /* Body */
 body {
-  background-image: url('https://www.aht.li/3548178/background_img.png');
+  background-image: url('https://www.aht.li/3583207/background_img.png');
   background-attachment: fixed;
   background-position: center top;
   background-size: 100%;
@@ -288,41 +288,41 @@ p.nomargin,
 /* Couleurs des pays */
 .terros,
 .terros blockquote {
-  color: #5DB561 !important;
+  color: #79ffa1 !important;
 }
 .mizuhan,
 .mizuhan blockquote {
-  color: #2782B3 !important;
+  color: #1b3a9b !important;
 }
 .flamen,
 .flamen blockquote {
-  color: #DC143C !important;
+  color: #7b0920 !important;
 }
 .nalcia,
 .nalcia blockquote {
-  color: #948DD7 !important;
+  color: #53097b !important;
 }
 .abyan,
 .abyan blockquote {
-  color: #20B2AA !important;
+  color: #c4cff6 !important;
 }
 .torcan,
 .torcan blockquote {
-  color: #FF6347 !important;
+  color: #f1f1a2 !important;
 }
 .dyrinn,
 .dyrinn blockquote {
-  color: #A0522D !important;
+  color: #462b1e !important;
 }
 .aliphyr,
 .aliphyr blockquote {
-  color: #DB7093 !important;
+  color: #fdbcd1 !important;
 }
 .pnj-color {
   color: #000000 !important;
 }
 .champion-color {
-  color: #959494 !important;
+  color: #ddddd9 !important;
 }
 /***** TITLES *****/
 /* H1 */
@@ -2709,25 +2709,25 @@ div.RS-cadre div.RS-case div.RS-case-txt {
   color: darkseagreen;
 }
 .abby {
-  color: #B8860B;
+  color: #fad7a0;
 }
 .peter {
-  color: #8B0000;
+  color: #d4c5c5;
 }
 .nina {
-  color: #006400;
+  color: darkseagreen;
 }
 .molly {
-  color: #CD5C5C;
+  color: #ef9a9a;
 }
 .luciano {
-  color: #5F9EA0;
+  color: #c4cff6;
 }
 .miku {
-  color: RoyalBlue;
+  color: #d6eaf8;
 }
 .tyrande {
-  color: #CD853F;
+  color: #462b1e;
 }
 /***** STAFF *****/
 .staff-kae {
@@ -2761,14 +2761,63 @@ div.RS-cadre div.RS-case div.RS-case-txt {
   color: #6666cc;
 }
 .staff-lucy {
-  color: mediumvioletred;
+  color: #5b013a;
 }
+/*mediumvioletred*/
 .staff-anthere {
   color: cornflowerblue;
 }
 .staff-andromede {
   color: lightslategray;
 }
+/*******************************************/
+/*                FUNCTIONS                */
+/*******************************************/
+/*******************************************/
+/*                VARIABLES                */
+/*******************************************/
+/***** THEME *****/
+/***** BODY *****/
+/* Body */
+/* Wrap */
+/* Panel */
+/***** CALENDAR *****/
+/***** CHATBOX *****/
+/***** FAQ *****/
+/***** FORMS *****/
+/* Fieldset */
+/* Input */
+/* Buttons */
+/***** HEADER *****/
+/* Page-header */
+/* Logo */
+/* Navigation */
+/* Toolbar */
+/***** LIST OF TOPICS AND FORUMS *****/
+/* Common */
+/* List of forums */
+/* List of topics */
+/***** LIST OF POSTS *****/
+/* View topic */
+/* Post */
+/* Elements in post */
+/***** OTHER *****/
+/***** PA *****/
+/***** PROFILE *****/
+/* Tabs */
+/* View & Edit */
+/***** SEND POST *****/
+/* Smiley */
+/* Editor */
+/***** SPECIAL TOPICS *****/
+/* Rules */
+/* Context */
+/* Presentation de lieux */
+/* Pensions PNJ */
+/* Fiche de présentation */
+/***** TABLES & LISTS *****/
+/***** TEXT & TITLES *****/
+/* Global */
 @font-face {
   font-family: 'Righteous';
   font-style: normal;
